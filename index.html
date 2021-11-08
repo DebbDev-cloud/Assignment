@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Field</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function addition() {
+            input1 = parseInt(myForm.input1.value);
+            input2 = parseInt(myForm.input2.value);
+            answer = input1 + input2;
+            myForm.answer.value = answer;
+        }
+        function substraction() {
+            input1 = parseInt(myForm.input1.value);
+            input2 = parseInt(myForm.input2.value);
+            answer = input1 - input2;
+            myForm.answer.value = answer;
+        }
+        function multiply() {
+            input1 = parseInt(myForm.input1.value);
+            input2 = parseInt(myForm.input2.value);
+            answer = input1 * input2;
+            myForm.answer.value = answer;
+        }
+        function division() {
+            input1 = parseInt(myForm.input1.value);
+            input2 = parseInt(myForm.input2.value);
+            answer = input1 / input2;
+            myForm.answer.value = answer;
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="input-box">
+
+        <form id="myForm"> <br><br>
+            <input type="text" id="input1"><br/></br>
+
+            <input type="text" id="input2"><br/><br/>
+
+            <input type="button" value="+" onclick="addition()">
+            <input type="button" value="-" onclick="substraction()">
+            <input type="button" value="*" onclick="multiply()">
+            <input type="button" value="/" onclick="division()">
+           
+            <input type="text" class="answer-input" id="answer">
+        </form>
+    </div>
+    
+</body>
+</html>
