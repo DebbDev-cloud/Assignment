@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <div class="input-box">
 
         <form id="myForm"> <br><br>
-            <input type="text" id="input1"><br/></br>
+            <input type="number" id="input1"><br/></br>
 
-            <input type="text" id="input2"><br/><br/>
+            <input type="number" id="input2"><br/><br/>
 
-            <input type="button" value="+" onclick="addition()">
-            <input type="button" value="-" onclick="substraction()">
-            <input type="button" value="*" onclick="multiply()">
-            <input type="button" value="/" onclick="division()">
+            <input type="button" value="+" id="addition">
+            <input type="button" value="-" id="substract">
+            <input type="button" value="*" id="multiply">
+            <input type="button" value="/" id="division">
            
-            <input type="text" class="answer-input" id="answer">
+            <input type="number" id="answer" class="answer-input">
         </form>
     </div>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
